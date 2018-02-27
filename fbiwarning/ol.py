@@ -35,7 +35,7 @@ def resolve(combineurl):
 		try:
 			response = requests.get(url=imgurl,headers=headers)
 			content = response.content
-			jpg = floder+'/%s.jpg'
+			jpg = floder+'/%sjpg'
 			try:
 				with open(jpg  %imgurl[-6:-3],'wb') as f:
 					f.write(content)
